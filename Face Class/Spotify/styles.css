@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 90px);
+}
+
+
+.sidebar {
+    width: 240px;
+    background-color: #000;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    color: #1ed760;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.menu p {
+    color: #b3b3b3;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.menu p:hover {
+    color: white;
+}
+
+.playlist {
+    margin-top: 40px;
+}
+
+.playlist h3 {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.playlist p {
+    color: #999;
+    font-size: 14px;
+    margin: 18px 0;
+}
+
+
+.main {
+    flex: 1;
+    overflow-y: auto;
+    background: linear-gradient(#242424, #121212 400px);
+}
+
+
+.top-bar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(18, 18, 18, 0.9);
+}
+
+.top-bar button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+}
+
+.top-bar input {
+    width: 400px;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    margin-left: 15px;
+}
+
+.profile {
+    margin-left: auto;
+}
+
+
+.content {
+    padding: 25px 30px;
+}
+
+.content h1 {
+    font-size: 30px;
+}
+
+.content h2 {
+    margin-top: 35px;
+}
+
+
+.quick {
+    display: flex;
+    gap: 15px;
+}
+
+.quick-card {
+    width: 250px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quick-card:hover {
+    background-color: #3a3a3a;
+}
+
+.small-cover {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-size: 25px;
+}
+
+.quick-card b {
+    padding-left: 15px;
+}
+
+
+.albums {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.album {
+    width: 170px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 7px;
+}
+
+.album:hover {
+    background-color: #282828;
+}
+
+.cover {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+}
+
+.album h3 {
+    margin: 15px 0 5px;
+    font-size: 16px;
+}
+
+.album p {
+    margin: 0;
+    color: #999;
+    font-size: 13px;
+}
+
+
+.purple {
+    background-color: #6a1b9a;
+}
+
+.blue {
+    background-color: #1565c0;
+}
+
+.red {
+    background-color: #c62828;
+}
+
+.green {
+    background-color: #2e7d32;
+}
+
+.orange {
+    background-color: #ef6c00;
+}
+
+.pink {
+    background-color: #ad1457;
+}
+
+.cyan {
+    background-color: #00838f;
+}
+
+.yellow {
+    background-color: #f9a825;
+}
+
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 90px;
+
+    background-color: #181818;
+
+    border-top: 1px solid #333;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+
+.song-info {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.song-cover {
+    width: 55px;
+    height: 55px;
+
+    background-color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.song-info p {
+    color: #999;
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+
+.controls {
+    flex: 1;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.buttons span {
+    cursor: pointer;
+}
+
+.play {
+    width: 35px;
+    height: 35px;
+
+    background-color: white;
+    color: black;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #aaa;
+    font-size: 11px;
+}
+
+.progress-bar {
+    width: 450px;
+    height: 4px;
+
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.progress-fill {
+    width: 40%;
+    height: 100%;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.volume {
+    width: 200px;
+    text-align: right;
+}
+
+.volume input {
+    width: 100px;
+}

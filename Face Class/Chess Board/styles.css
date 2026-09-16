@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.chess-board {
+    width: 480px;
+    height: 480px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 5px solid #333;
+}
+
+.white,
+.black {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.black {
+    background-color: #b58863;
+}

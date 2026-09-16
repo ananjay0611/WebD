@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 700px;
+    margin: 30px auto;
+    padding: 25px 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.form-row > label {
+    width: 150px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.name-box {
+    display: flex;
+    gap: 10px;
+}
+
+.name-box input {
+    width: 140px;
+}
+
+.dob {
+    display: flex;
+    gap: 8px;
+}
+
+.dob select {
+    width: 95px;
+}
+
+.mobile {
+    display: flex;
+    gap: 8px;
+}
+
+.mobile select {
+    width: 70px;
+}
+
+.mobile input {
+    width: 220px;
+}
+
+.radio {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio label {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.radio input {
+    margin-right: 4px;
+}
+
+.form-row textarea {
+    height: 80px;
+    resize: none;
+}
+
+input[type="file"] {
+    font-size: 13px;
+}
+
+button {
+    display: block;
+    margin: 25px auto 5px;
+
+    padding: 9px 30px;
+
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}

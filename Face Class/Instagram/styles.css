@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+}
+
+.login-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-box h1 {
+    font-family: cursive;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 12px;
+}
+
+.login {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.or span {
+    height: 1px;
+    background-color: #ddd;
+    flex: 1;
+}
+
+.or p {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.facebook {
+    display: block;
+    color: #385185;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.forgot {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.signup-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.signup-box p {
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
